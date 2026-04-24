@@ -1,0 +1,27 @@
+{
+  "name": "smart-contract-security",
+  "version": "1.0.0",
+  "description": "智能合约安全漏洞 Truffle 实战 - 完整的可执行代码",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "truffle test",
+    "console": "truffle console",
+    "dev": "truffle develop"
+  },
+  "keywords": [
+    "solidity",
+    "truffle",
+    "smart-contract",
+    "security",
+    "vulnerability",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}
